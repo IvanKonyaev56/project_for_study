@@ -17,3 +17,6 @@ class BasePage:
         except (NoSuchElementException):
             return False
         return True
+
+    def create_a_screenshot(self, name_of_file):
+        self.browser.save_screenshot("C:/Users/IvanHome/Desktop/{}.jpeg".format(name_of_file))

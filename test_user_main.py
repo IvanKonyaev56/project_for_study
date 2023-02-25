@@ -19,9 +19,15 @@ class TestPositivRegistraion:
         page.click_to_button_tax_free_form()
         page.fill_in_the_field_name()
         page.fill_in_the_field_last_name()
+        page.fill_in_the_field_middle_name()
         page.fill_in_the_date_of_birth()
         page.fill_in_the_country_of_issue()
-        time.sleep(5)
+        page.fill_in_the_passport_number()
+        page.fill_in_the_date_of_issue()
+        page.fill_in_the_date_of_validity()
+        page.create_a_screenshot("1_Паспортные данные")
+        page.click_to_continue_button()
+        time.sleep(2)
 
     # Gроверка заполнения полей на шаге "Платёжные данные".
     # def test_second_step(self, browser):
