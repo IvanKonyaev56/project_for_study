@@ -52,3 +52,14 @@ class UserPageLocators:
     FIND_DAY_3 = (By.XPATH, "//div[text()=' 1 ']")
 
     CONTINUE_BUTTON = (By.CSS_SELECTOR, ".btn-holder .btn.btn-primary")
+
+    # Селекторы полей на шаге "Платёжные данные".
+    BANKCARD_NUMBER = (By.CSS_SELECTOR, "[id = 'recipientNumber']")
+
+    CARD_VALIDITY = (By.CSS_SELECTOR, ".mat-focus-indicator.mat-icon-button.mat-button-base")
+    FIND_YEAR_4 = (By.XPATH, "//div[text()=' 2025 ']")
+    FIND_MONTH_4 = (By.XPATH, "//div[text()=' MAY ']")
+
+    CARD_HOLDER_NAME = (By.CSS_SELECTOR, "[id = 'recipientName']")
+
+    CHECKBOX_LABEL = (By.CSS_SELECTOR, "[for = 'makeDefault']")

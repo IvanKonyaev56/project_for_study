@@ -84,3 +84,24 @@ class UserPage(BasePage):
     def click_to_continue_button(self):
         find_button = self.browser.find_element(*UserPageLocators.CONTINUE_BUTTON)
         find_button.click()
+
+    def fill_in_the_bankcard_number(self):
+        find_field_bankcard_number = self.browser.find_element(*UserPageLocators.BANKCARD_NUMBER)
+        find_field_bankcard_number.send_keys("4000 1111 2222 3333")
+        time.sleep(1.25)
+
+    def fill_in_the_date_of_card_validity(self):
+        find_the_card_validity = self.browser.find_element(*UserPageLocators.CARD_VALIDITY)
+        find_the_card_validity.click()
+        find_year = self.browser.find_element(*UserPageLocators.FIND_YEAR_4)
+        find_year.click()
+        find_month = self.browser.find_element(*UserPageLocators.FIND_MONTH_4)
+        find_month.click()
+
+    def fill_in_the_card_holder_name(self):
+        find_field_card_holder_name = self.browser.find_element(*UserPageLocators.CARD_HOLDER_NAME)
+        find_field_card_holder_name.send_keys("Ivan Ivanov")
+
+    def fill_in_the_checkbox(self):
+        find_the_checkbox = self.browser.find_element(*UserPageLocators.CHECKBOX_LABEL)
+        find_the_checkbox.click()
