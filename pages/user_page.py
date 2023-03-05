@@ -105,3 +105,13 @@ class UserPage(BasePage):
     def fill_in_the_checkbox(self):
         find_the_checkbox = self.browser.find_element(*UserPageLocators.CHECKBOX_LABEL)
         find_the_checkbox.click()
+
+    def fill_in_the_phone_numbers(self):
+        find_field_phone_numbers = self.browser.find_element(*UserPageLocators.PHONE_NUMBERS)
+        find_field_phone_numbers.send_keys("+79619007536")
+
+    def fill_in_the_email_address(self):
+        find_the_add_button = self.browser.find_element(*UserPageLocators.BUTTON_ADD_EMAIL)
+        find_the_add_button.click()
+        find_field_email_address = self.browser.find_element(*UserPageLocators.PHONE_NUMBERS)
+        find_field_email_address.send_keys("testWA001@mailto.plus")

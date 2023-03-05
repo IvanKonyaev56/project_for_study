@@ -63,3 +63,9 @@ class UserPageLocators:
     CARD_HOLDER_NAME = (By.CSS_SELECTOR, "[id = 'recipientName']")
 
     CHECKBOX_LABEL = (By.CSS_SELECTOR, "[for = 'makeDefault']")
+
+    # Селекторы полей на шаге "Платёжные данные".
+    PHONE_NUMBERS = (By.CSS_SELECTOR, "[id = 'phone-numbers-0']")
+    BUTTON_ADD_EMAIL = (By.CSS_SELECTOR,
+                        "div.col-sm-12.col-md-6.col-lg-5.form-group.form-group-wrapper.col-lg-6.px-0.p-left-21 > div > div.label-holder.m-bottom-24 > button")
+    NEW_EMAIL_FIELD = (By.CSS_SELECTOR, "[id = 'email-1']")
